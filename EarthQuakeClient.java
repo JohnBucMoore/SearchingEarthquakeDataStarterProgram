@@ -21,8 +21,7 @@ public class EarthQuakeClient {
     double distMax,
     Location from) {
         ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
-        // TODO
-
+        //  TODO
         return answer;
     }
 
@@ -44,7 +43,11 @@ public class EarthQuakeClient {
         String source = "data/nov20quakedata.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);
         System.out.println("read data for "+list.size()+" quakes");
-
+        ArrayList<QuakeEntry> results = filterByMagnitude(list, 5.0);
+        for (QuakeEntry result : results) {
+            System.out.println(result);
+        }
+        System.out.println("Found "+results.size()+" quakes that match that criteria");
     }
 
     public void closeToMe(){
