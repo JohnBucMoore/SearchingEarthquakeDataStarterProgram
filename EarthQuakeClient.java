@@ -9,8 +9,11 @@ public class EarthQuakeClient {
     public ArrayList<QuakeEntry> filterByMagnitude(ArrayList<QuakeEntry> quakeData,
     double magMin) {
         ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
-        // TODO
-
+        for (QuakeEntry quake : quakeData) {
+            if (quake.getMagnitude() > magMin) {
+                answer.add(quake);
+            }
+        }
         return answer;
     }
 
