@@ -66,7 +66,10 @@ public class EarthQuakeClient {
         // This location is Bridgeport, CA
         // Location city =  new Location(38.17, -118.82);
 
-        // TODO
+        ArrayList<QuakeEntry> quakes = filterByDistanceFrom(list,1000,city);
+        for (QuakeEntry quake : quakes) {
+            System.out.println(quake.getLocation().distanceTo(city)+" "+quake.getInfo());
+        }
     }
 
     public void createCSV(){
