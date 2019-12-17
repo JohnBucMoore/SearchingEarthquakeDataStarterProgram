@@ -40,6 +40,26 @@ public class EarthQuakeClient {
         return answer;
     }
 
+    public ArrayList<QuakeEntry> filterByPhrase(ArrayList<QuakeEntry> quakeData, String where, String phrase) {
+        ArrayList<QuakeEntry> answer = new ArrayList<>();
+        for (QuakeEntry quake : quakeData) {
+            if (where.equals("any")) {
+                if (quake.getInfo().contains(phrase)) {
+                    answer.add(quake);
+                }
+            } else if (where.equals("start")) {
+                if (quake.getInfo().substring(0, quake.getInfo().length()/2).contains(phrase)) {
+                    answer.add(quake);
+                }
+            } else if (where.equals("end")) {
+                if (quake.getInfo().substring(quake.getInfo().length()/2).contains(phrase)) {
+                    answer.add(quake);
+                }
+            }
+        }
+        return answer;
+    }
+
     public void dumpCSV(ArrayList<QuakeEntry> list){
         System.out.println("Latitude,Longitude,Magnitude,Info");
         for(QuakeEntry qe : list){
