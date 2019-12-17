@@ -43,18 +43,13 @@ public class EarthQuakeClient {
     public ArrayList<QuakeEntry> filterByPhrase(ArrayList<QuakeEntry> quakeData, String where, String phrase) {
         ArrayList<QuakeEntry> answer = new ArrayList<>();
         for (QuakeEntry quake : quakeData) {
-            if (where.equals("any")) {
-                if (quake.getInfo().contains(phrase)) {
-                    answer.add(quake);
-                }
-            } else if (where.equals("start")) {
-                if (quake.getInfo().substring(0, quake.getInfo().length()/2).contains(phrase)) {
-                    answer.add(quake);
-                }
-            } else if (where.equals("end")) {
-                if (quake.getInfo().substring(quake.getInfo().length()/2).contains(phrase)) {
-                    answer.add(quake);
-                }
+            String title = quake.getInfo();
+            if (where.equals("any") && title.contains(phrase)) {
+                answer.add(quake);
+            } else if (where.equals("start") && title.substring(0, title.length()/2).contains(phrase)) {
+                answer.add(quake);
+            } else if (where.equals("end") && title.substring(title.length()/2).contains(phrase)) {
+                answer.add(quake);
             }
         }
         return answer;
@@ -101,6 +96,8 @@ public class EarthQuakeClient {
         for (QuakeEntry quake : quakes) {
             System.out.println(quake.getLocation().distanceTo(city)+" "+quake.getInfo());
         }
+        System.out.println("Found "+quakes.size()+" quakes that match that criteria");
+
     }
 
     public void quakesOfDepth() {
@@ -114,6 +111,23 @@ public class EarthQuakeClient {
         for (QuakeEntry quake : quakes) {
             System.out.println(quake);
         }
+        System.out.println("Found "+quakes.size()+" quakes that match that criteria");
+    }
+
+    public void quakesByPhrase() {
+        EarthQuakeParser parser = new EarthQuakeParser();
+        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        String source = "data/nov20quakedatasmall.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        System.out.println("read data for "+list.size()+" quakes");
+
+        ArrayList<QuakeEntry> quakes = filterByPhrase(list, "end", "California");
+        //ArrayList<QuakeEntry> quakes = filterByPhrase(list, "any", "Can"); //3
+        //ArrayList<QuakeEntry> quakes = filterByPhrase(list, "start", "Explosion"); //2
+        for (QuakeEntry quake : quakes) {
+            System.out.println(quake);
+        }
+        System.out.println("Found "+quakes.size()+" quakes that match that criteria");
     }
 
     public void createCSV(){
