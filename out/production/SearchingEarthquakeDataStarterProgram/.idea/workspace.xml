@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f4dc7ed-5204-41b9-b240-b847027b0b54" name="Default Changelist" comment="" />
+    <list default="true" id="0f4dc7ed-5204-41b9-b240-b847027b0b54" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/LargestQuakes.java" beforeDir="false" afterPath="$PROJECT_DIR$/LargestQuakes.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/JohnBucMoore/SearchingEarthquakeDataStarterProgram.git" />
+      </set>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1V4rAKyRmo46gUmNIGPD9kgsRPu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -27,7 +55,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LargestQuakes">
     <configuration name="EarthQuakeParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EarthQuakeParser" />
       <module name="SearchingEarthquakeDataStarterProgram" />
@@ -35,8 +63,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LargestQuakes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LargestQuakes" />
+      <module name="SearchingEarthquakeDataStarterProgram" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LargestQuakes" />
         <item itemvalue="Application.EarthQuakeParser" />
       </list>
     </recent_temporary>
@@ -63,21 +99,126 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576523064136</updated>
-      <workItem from="1576523069047" duration="1625000" />
+      <workItem from="1576523069047" duration="12204000" />
+      <workItem from="1576615969603" duration="4493000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1576526038098</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576526038098</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add filterByMagnitude method">
+      <created>1576530018668</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576530018668</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add bigQuake method">
+      <created>1576530593252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576530593252</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add filterByDistanceFrom method">
+      <created>1576532000528</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576532000528</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add closeToMe method">
+      <created>1576538365160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576538365160</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add filterByDepth method and quakesOfDepth method">
+      <created>1576539732447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576539732447</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add filterByPhrase method">
+      <created>1576542207911</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576542207911</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add quakesByPhrase method">
+      <created>1576544031502</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576544031502</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add getClosest method">
+      <created>1576632458898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576632458898</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="add filterByMagnitude method" />
+    <MESSAGE value="add bigQuake method" />
+    <MESSAGE value="add filterByDistanceFrom method" />
+    <MESSAGE value="add closeToMe method" />
+    <MESSAGE value="add filterByDepth method and quakesOfDepth method" />
+    <MESSAGE value="add filterByPhrase method" />
+    <MESSAGE value="add quakesByPhrase method" />
+    <MESSAGE value="add getClosest method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getClosest method" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="339" y="27" key="CommitChangelistDialog2" timestamp="1576632458193">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state x="339" y="27" key="CommitChangelistDialog2/0.23.1440.843@0.23.1440.843" timestamp="1576632458193" />
+    <state x="685" y="325" width="630" height="199" key="Github.ShareDialog" timestamp="1576526696200">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state x="685" y="325" width="630" height="199" key="Github.ShareDialog/0.23.1440.843@0.23.1440.843" timestamp="1576526696200" />
+    <state width="657" height="206" key="GridCell.Tab.0.bottom" timestamp="1576579529582">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state width="657" height="206" key="GridCell.Tab.0.bottom/0.23.1440.843@0.23.1440.843" timestamp="1576579529582" />
+    <state width="657" height="206" key="GridCell.Tab.0.center" timestamp="1576579529581">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state width="657" height="206" key="GridCell.Tab.0.center/0.23.1440.843@0.23.1440.843" timestamp="1576579529581" />
+    <state width="657" height="206" key="GridCell.Tab.0.left" timestamp="1576579529580">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state width="657" height="206" key="GridCell.Tab.0.left/0.23.1440.843@0.23.1440.843" timestamp="1576579529580" />
+    <state width="657" height="206" key="GridCell.Tab.0.right" timestamp="1576579529582">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state width="657" height="206" key="GridCell.Tab.0.right/0.23.1440.843@0.23.1440.843" timestamp="1576579529582" />
     <state x="416" y="23" key="SettingsEditor" timestamp="1576523141329">
       <screen x="0" y="23" width="1440" height="843" />
     </state>
     <state x="416" y="23" key="SettingsEditor/0.23.1440.843@0.23.1440.843" timestamp="1576523141329" />
-    <state x="798" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1576523083882">
+    <state x="640" y="164" key="Vcs.Push.Dialog.v2" timestamp="1576538428778">
       <screen x="0" y="23" width="1440" height="843" />
     </state>
-    <state x="798" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.843@0.23.1440.843" timestamp="1576523083882" />
+    <state x="640" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.843@0.23.1440.843" timestamp="1576538428778" />
+    <state x="798" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1576615969738">
+      <screen x="0" y="23" width="1440" height="843" />
+    </state>
+    <state x="798" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.843@0.23.1440.843" timestamp="1576615969738" />
   </component>
 </project>
