@@ -17,7 +17,10 @@ public class LargestQuakes {
         }
          */
         System.out.println("read data for "+list.size());
-
+        ArrayList<QuakeEntry> quakeData = getLargest(list, 5);
+        for (QuakeEntry quake : quakeData) {
+            System.out.println(quake);
+        }
     }
 
     public int indexOfLargest(ArrayList<QuakeEntry> data) {
@@ -28,6 +31,17 @@ public class LargestQuakes {
             }
         }
         return dex;
+    }
+
+    public ArrayList<QuakeEntry> getLargest(ArrayList<QuakeEntry> quakeData, int howMany) {
+        ArrayList<QuakeEntry> copy = new ArrayList<>(quakeData);
+        ArrayList<QuakeEntry> largest = new ArrayList<>();
+        for (int i = 0; i < howMany; i++) {
+            int index = indexOfLargest(copy);
+            largest.add(copy.get(index));
+            copy.remove(copy.get(index));
+        }
+        return largest;
     }
 
     public void test() {
